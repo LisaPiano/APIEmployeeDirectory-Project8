@@ -2,6 +2,18 @@ body {
     position: relative;
 }
 
+h1 {
+    font-size: 20px; 
+    text-transform: uppercase;
+}
+
+p {
+    line-height: 5px;
+}
+
+h2 {
+    margin-bottom: 0;
+}
 .overlay {
     position: absolute;
     top: 0;
@@ -32,4 +44,26 @@ body {
 .hidden {
     display: none;
     }
-        
+
+    .avatar {
+        height: 100px; 
+        width: 100px; 
+        border-radius: 50%; 
+        padding-left: 10px;
+
+    }
+   .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    grid-template-rows: 20% 20% 20% 20%;
+    gap: 20px;
+   }
+
+   .card {
+    border: solid 1px grey;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    padding-bottom: 30px; 
+    padding-top: 20px; 
+
+   }

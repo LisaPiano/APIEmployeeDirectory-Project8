@@ -40,6 +40,8 @@ h2 {
     right: 15px;
     top: 5px;
     cursor: pointer;
+    border: 0;
+    background-color: white;
     }
     
 .hidden {
@@ -67,5 +69,8 @@ h2 {
     grid-template-columns: 40% 60%;
     padding-bottom: 30px; 
     padding-top: 20px; 
+   }
 
+   .email {
+    font-size: 14px;
    }

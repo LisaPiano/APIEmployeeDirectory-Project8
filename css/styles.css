@@ -16,7 +16,9 @@ h2 {
     margin-bottom: 0;
 }
 .overlay {
-    position: absolute;
+    width: 100%;
+    height: 100%;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -26,7 +28,7 @@ h2 {
 
 .modal {
     width: 375px;
-    margin: 15% auto auto;
+    margin: 5% auto auto;
     position: relative;
     text-align: center;
     background: #fff;
@@ -34,6 +36,8 @@ h2 {
     border-radius: 5px;
     padding: 30px 20px;
  }
+
+ 
 
  .modal-close {
     position: absolute;

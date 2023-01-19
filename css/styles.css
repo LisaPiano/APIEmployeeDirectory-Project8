@@ -27,7 +27,8 @@ h2 {
     }
 
 .modal {
-    width: 375px;
+    width: 300px;
+    height: 350px;
     margin: 5% auto auto;
     position: relative;
     text-align: center;
@@ -35,6 +36,7 @@ h2 {
     border: 1px solid #778;
     border-radius: 5px;
     padding: 30px 20px;
+    z-index: 2;
  }
 
  
@@ -57,8 +59,8 @@ h2 {
         width: 100px; 
         border-radius: 50%; 
         padding-left: 10px;
-
     }
+    
    .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 30%);

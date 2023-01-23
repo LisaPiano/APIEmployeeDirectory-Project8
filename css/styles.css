@@ -1,19 +1,23 @@
-body {
-    position: relative;
+body { 
+    margin: 0 auto; 
+    font-family: "Helvetica Neue", "Arial", sans-serif;
+    overflow: hidden;
 }
 
 h1 {
-    font-size: 20px; 
+    font-size: 14px; 
     text-transform: uppercase;
-    margin-left: 20px; 
-}
+    margin-left: 15px;
+} 
 
 p {
-    line-height: 5px;
+    font-size: 12px;
+    line-height: 2px;
 }
 
 h2 {
     margin-bottom: 0;
+    font-size: 12px;
 }
 
 .overlay {
@@ -25,11 +29,11 @@ h2 {
     right: 0;
     bottom: 0;
     background: rgba(100, 100, 100, 0.4)
-    }
+}
 
 .modal {
     width: 300px;
-    height: 350px;
+    height: 300px;
     margin: 5% auto auto;
     position: relative;
     text-align: center;
@@ -47,35 +51,158 @@ h2 {
     cursor: pointer;
     border: 0;
     background-color: white;
-    }
+}
     
 .hidden {
     display: none;
+}
+
+    .avatar {
+        height: 50px; 
+        width: 50px; 
+        border-radius: 50%; 
+        padding-left: 10px;
+}
+    
+   .grid-container {
+    height: 100%; 
+    display: grid;
+    max-width: 98%;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: repeat(4 fr);
+    gap: 16px; 
+    margin-right: 5px;
+    margin-left: 5px;
+    justify-content: stretch;
+}
+
+   .card {
+    border: solid 1px rgba(184, 184, 184, 0.7);
+    border-radius: 2%;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    gap: 14px;
+    padding-top: 10px; 
+    padding-bottom: 20px; 
+    height: 80px;
+    margin-right: 10px; 
+    margin-left: 10px
+}
+
+   .email {
+    font-size: 10px;
+}
+
+   .address {
+    font-size: 12px;
+}
+
+   .name {
+    font-size: 12px; 
+}
+
+
+   /* =======================================================================================================
+   Media Queries
+   +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++= */
+   @media screen and (max-width: 732px){
+    h1 {
+        font-size: 10px;
+        margin-left: 44px; 
+        padding: 20px; 
+    }
+
+    p, h2 {
+        font-size: 10px;
+    }
+
+    .card {
+        grid-template-columns: 18% 82%;
+        gap: 10px;
+        padding-top: 8px;
+        padding-bottom: 24px;
     }
 
     .avatar {
-        height: 100px; 
-        width: 100px; 
-        border-radius: 50%; 
-        padding-left: 10px;
+        height: 30px; 
+        width: 30px; 
+        padding-left: 5px;
+    }
+
+    .grid-container {
+        grid-template-columns: auto auto;
+        grid-template-rows: repeat(5 fr);
+        justify-content: stretch;
+        gap: 5px;
+        margin-left: 52px;
+    }
+   }
+/* 
+   =============================================================================== */
+   @media screen and (min-width: 733px){
+        h1 {
+            font-size: 16px;
+        }
+
+        p, h2 {
+            font-size: 14px;
+        }
+        .avatar {
+            height: 50px; 
+            width: 50px; 
+        }
+    }
+
+/* 
+   =============================================================================== */
+   @media screen and (min-width: 1201px) {
+
+
+        h1 {
+            font-size: 20px; 
+            margin-left: 40px; 
+        }
+
+        p, h2 {
+            font-size: 18px;
+        }
+
+        .grid-container {
+        grid-template-columns: 33.3% 33.3% 33.3%;
+        grid-template-rows: 25% 25% 25% 25%;
+        justify-content: stretch; 
+        gap: 8px;
+        margin: 0 25px;
+        }
+
+        .card {
+        width: 380px; 
+        height: 80px; 
+        margin: auto;
+        padding-bottom: 47px; 
+        padding-top: 20px; 
+        }
+           
+        .avatar {
+            height: 80%;
+            width: 80%;
+        }
+
+        .name {
+        font-size: 18px; 
+        }
+
+        .email {
+        font-size: 16px;
+        }
+    
+        .address {
+        font-size: 16px;
+        }
+
+        .modal {
+            height: 400px;
+        }
     }
     
-   .grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 30%);
-    grid-template-rows: 20% 20% 20% 20%;
-    gap: 20px;
-    margin: 20px; 
-   }
-
-   .card {
-    border: solid 1px grey;
-    display: grid;
-    grid-template-columns: 40% 60%;
-    padding-bottom: 30px; 
-    padding-top: 20px; 
-   }
-
-   .email {
-    font-size: 14px;
-   }
+ 

@@ -3,7 +3,7 @@
             // global variables
             let employees = [];
             const urlAPI = `https://randomuser.me/api/?results=12&inc=name, picture,
-            email, location, phone, dob &noinfo &nat=US`
+            email, location, phone, dob &noinfo &nat=US`;
             const gridContainer = document.querySelector(".grid-container");
             const overlay = document.querySelector(".overlay");
             const modalContainer = document.querySelector(".modal-content");
@@ -14,7 +14,7 @@
             .then(res => res.json())
             .then(res => res.results)
             .then(displayEmployees)
-            .catch(err => console.log("There was a big problem!"))
+            .catch(err => console.log("There was a big problem!"));
             
             
             
@@ -64,7 +64,7 @@
                 `;
                 overlay.classList.remove("hidden");
                 modalContainer.innerHTML = modalHTML;
-            }
+            };
                 
             
             gridContainer.addEventListener('click', e => {

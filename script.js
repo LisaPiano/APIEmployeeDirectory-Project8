@@ -49,6 +49,8 @@
                 let { name, dob, phone, email, location: { city, street, state, postcode
                 }, picture } = employees[index];
                 let date = new Date(dob.date);
+                const monthChanged = String(date.getMonth() + 1).padStart(2, '0');
+                const dayChanged = String(date.getDate()).padStart(2, '0');
                 const modalHTML = `
                 <img class="avatar" src="${picture.large}" />
                 <div class="text-container">
@@ -59,7 +61,9 @@
                 <p class="phone">${phone}</p>
                 <p class="address">${street.number} ${street.name}, ${state} ${postcode}</p>
                 <p class="birthday">Birthday:
-                ${date.getMonth()+1}/${date.getDate()}/${date.getFullYear()}</p>
+
+
+                ${monthChanged}/${dayChanged}/${date.getFullYear()}</p>
                 </div>
                 `;
                 overlay.classList.remove("hidden");

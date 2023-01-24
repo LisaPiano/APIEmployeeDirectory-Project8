@@ -2,6 +2,7 @@ body {
     margin: 0 auto; 
     font-family: "Helvetica Neue", "Arial", sans-serif;
     overflow: hidden;
+    background-color: #fcfcfc;
 }
 
 h1 {
@@ -37,7 +38,7 @@ h2 {
     margin: 5% auto auto;
     position: relative;
     text-align: center;
-    background: #fff;
+    background: #fcfcfc;
     border: 1px solid #778;
     border-radius: 5px;
     padding: 30px 20px;

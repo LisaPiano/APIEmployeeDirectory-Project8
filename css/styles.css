@@ -1,5 +1,4 @@
 html {
-    background-color: purple;
     margin: 0;
     padding: 0;
 }
@@ -13,7 +12,6 @@ body {
     grid-template-rows: 50px 680px;
     grid-template-columns: 100%;
     justify-content: stretch;
-    border: 4px solid red;
     width: 100%;
 }
 
@@ -24,16 +22,6 @@ h1 {
     margin-top: 31px;
     margin-left: 25px;
 } 
-
-p {
-    font-size: 7px;
-    line-height: 8px;
-}
-
-h2 {
-    margin-bottom: 0;
-    font-size: 7px;
-}
 
 .overlay {
     width: 100%;
@@ -47,10 +35,11 @@ h2 {
 }
 
 .modal {
-    width: 120px;
-    height: 167px;
-    margin: 5% auto auto;
+    width: 130px;
+    height: 211px;
+    margin: 0 auto;
     position: relative;
+    top: 80px;
     text-align: center;
     background: #fcfcfc;
     border: 1px solid #778;
@@ -92,18 +81,17 @@ h2 {
 }
 
 .grid-container {
+    width: 100%;
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto auto auto auto auto;
-    justify-content: stretch;
+    justify-content: center;
     align-items: stretch;
-    height: 650px;
+    height: 660px;
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 5px;
-    gap: 4px;
-    
-    border: 3px solid green;
+    gap: 8px;
     
 }
    
@@ -115,9 +103,11 @@ h2 {
     grid-template-columns: 23% 77%;
     align-items: center;
     justify-self: stretch;
-    gap: 22px;
     background-color: white;
     margin-bottom: 18px;
+    height: 100%;
+    width: 95%;
+    gap: 25px;
 }
    .address, .email  {
     font-size: 10px;
@@ -133,31 +123,6 @@ h2 {
    Media Queries
    +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++= */
   
-     /* @media screen and (min-width: 642px) {   
-        
-        .grid-container {
-            grid-template-columns: repeat(3, auto);
-            grid-template-rows: 25% 25% 25% 25%;
-            justify-content: stretch;   
-            gap: 16px;   
-            height: 590px;
-    } 
-
-    .avatar {
-        margin-left: 50px;
-        margin-bottom: 35px;
-
-    }
-
-    .card {
-        grid-template-columns: 23% 77%;;
-        align-items: center;
-        justify-content: center;
-        gap: 80px;
-        height: 130px;
-        /* width: 190px;
-    } */
-/* } */ 
 
 /* ============================================= */
 @media screen and (min-width: 742px) {   
@@ -167,27 +132,45 @@ h2 {
         justify-content: center;   
         gap: 16px;   
         height: 590px;
+        width: 98%;
 } 
 
 .avatar {
-    margin-left: 60px;
+    margin-left: 10px;
     margin-bottom: 35px;
+    height: 70px; 
+    width: 70px; 
 
 }
 
 .card {
-    grid-template-columns: 25% 75%;;
+    grid-template-columns: 23% 77%;;
     align-items: center;
-    justify-content: center;
-    gap: 70px;
+    justify-content: stretch;
+    gap: 42px;
     height: 150px;
-    width: 230px;
+    width: 226px;
 } 
 
-.address, .email  {
-    font-size: 8px;
+.name {
+    font-size: 14px;
+    margin-top: 2px;
 }
-   
+.address, .email, .phone, .birthday  {
+    font-size: 9px;
+}
+
+
+.modal {
+    width: 211px;
+    height: 317px;
+    position: relative;
+ }
+
+ .phone {
+    margin-top: 20px;
+ }
+
 
 }
 
@@ -196,8 +179,23 @@ h2 {
 /* * ============================================= */ 
 @media screen and (min-width: 842px) {   
     .card {
-        
-        width: 260px;
+        width: 258px;
+    }
+
+    .address, .email, .phone, .birthday {
+        font-size: 10px;
+    }
+
+    h1 {
+        font-size: 14px;
+        margin-left: 15px;
+    }
+
+    .avatar {
+        height: 80px; 
+        width: 80px; 
+        margin-bottom: 0px;
+    
     }
 }
 
@@ -206,26 +204,94 @@ h2 {
 
 @media screen and (min-width: 942px) {   
      
-    
-.grid-container {
-    justify-content: stretch;
-    align-items: stretch;
-}
-
 .card {
-    height: unset;
-    width: unset;
+   width: 288px; 
+   gap: 50px;
    
 }
 
+.avatar {
+    height: 90px; 
+    width: 90px; 
+
 }
 
+.address, .email, .phone, .birthday  {
+    font-size: 11px;
+}
+}
+/* ============================================= */
+@media screen and (min-width: 1040px) {   
+    .card {
+       width: 310px;  
+       gap: 60px;
+    }
+
+    .avatar {
+        height: 105px; 
+        width: 105px; 
+    }
+
+    .modal {
+        height: 340px;
+        width: 288px;
+    }
+
+    hr {
+        margin-top: 35px;
+        margin-bottom: 35px;
+
+    }
+   
+    }
+
+    /* ============================================= */
+
+    @media screen and (min-width: 1120px) {   
+        .card {
+           width: 350px;  
+        }
+        .address, .email, .phone, .birthday  {
+            font-size: 14px;
+        }
+        .name {
+            font-size: 18px;
+        }
+        .modal {
+            height: 360px;
+            width: 298px;
+        }
+        }
+/* ============================================= */
 @media screen and (min-width: 1220px) {   
         
     .card {
-        height: unset;
-        width: unset;
-        margin-right: 15px;
-        margin-left: 15px;
+        height: 150px;
+        width: 370px;
+        padding-left: 10px;
     }
+
+    .avatar {
+        height: 108px; 
+        width: 108px; 
+    }
+
+    .modal {
+        height: 365px;
+        width: 350px;
+    }
+    }
+/*=============================================*/
+@media screen and (min-width: 1450px) {   
+        
+        .card {
+            height: 150px;
+            width: 420px;
+        }
+
+        .avatar{
+            height: 110px;
+            width: 110px;
+            margin-top: 15px;
+        }
     }

@@ -11,7 +11,7 @@ body {
     display: grid;
     grid-template-rows: 50px 680px;
     grid-template-columns: 100%;
-    justify-content: stretch;
+    justify-content: center;
     width: 100%;
 }
 
@@ -92,7 +92,6 @@ h1 {
     margin-right: 10px;
     margin-bottom: 5px;
     gap: 8px;
-    
 }
    
 
@@ -140,7 +139,6 @@ h1 {
     margin-bottom: 35px;
     height: 70px; 
     width: 70px; 
-
 }
 
 .card {
@@ -156,10 +154,10 @@ h1 {
     font-size: 14px;
     margin-top: 2px;
 }
+
 .address, .email, .phone, .birthday  {
     font-size: 9px;
 }
-
 
 .modal {
     width: 211px;
@@ -170,8 +168,6 @@ h1 {
  .phone {
     margin-top: 20px;
  }
-
-
 }
 
 /* ============================================= */
@@ -195,7 +191,6 @@ h1 {
         height: 80px; 
         width: 80px; 
         margin-bottom: 0px;
-    
     }
 }
 
@@ -207,13 +202,11 @@ h1 {
 .card {
    width: 288px; 
    gap: 50px;
-   
 }
 
 .avatar {
     height: 90px; 
     width: 90px; 
-
 }
 
 .address, .email, .phone, .birthday  {
@@ -240,7 +233,10 @@ h1 {
     hr {
         margin-top: 35px;
         margin-bottom: 35px;
+    }
 
+    h1 {
+        margin-left: 30px;
     }
    
     }
@@ -251,12 +247,15 @@ h1 {
         .card {
            width: 350px;  
         }
+
         .address, .email, .phone, .birthday  {
             font-size: 14px;
         }
+
         .name {
             font-size: 18px;
         }
+        
         .modal {
             height: 360px;
             width: 298px;
@@ -293,5 +292,9 @@ h1 {
             height: 110px;
             width: 110px;
             margin-top: 15px;
+        }
+
+        h1 {
+            margin-left: 50px;
         }
     }
